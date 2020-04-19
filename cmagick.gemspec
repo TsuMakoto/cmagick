@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     So I created a tool that allows you to view the image as it is at the console at runtime.
   EOF
 
-  spec.homepage = 'https://github.com/TsuMakoto/cmagick/README.md'
+  spec.homepage = 'https://github.com/TsuMakoto/cmagick/blob/master/README.md'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
   # Specify which files should be added to the gem when it is released.
