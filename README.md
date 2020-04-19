@@ -35,7 +35,13 @@ cmagick.resize(0.1).show
 
 ## Example
 
+Left: original
+
+Right: convert ansi code
+
 ![バーくん](./resources/bar.png)
+
+source: https://twitter.com/raibarori/status/1028576227571847168/photo/1
 
 
 ## Development
