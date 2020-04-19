@@ -14,7 +14,7 @@ module CMagick
   # cmagick.resize(0.1).show
   #
   class LoadImage
-    def initialize(img_path,
+    def initialize(img_path = '',
                    image: Magick::ImageList.new(img_path),
                    converter: RGBToANSI,
                    bg: "\x1b[48;5;")
@@ -35,6 +35,12 @@ module CMagick
     end
 
     def resize(scale = 1.0)
+      if image_path == ''
+        return LoadImage.new(image: @image.resize(scale),
+                             converter: @converter,
+                             bg: @bg)
+      end
+
       LoadImage.new(@img_path,
                     image: @image.resize(scale),
                     converter: @converter,

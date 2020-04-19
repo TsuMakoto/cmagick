@@ -33,6 +33,18 @@ if img is big size
 cmagick.resize(0.1).show
 ```
 
+This gem uses RMagick.
+You can control the image that can be displayed by giving it as an argument.
+
+```
+rmagick = Magick::ImageLIst.new('/path/to/img.jpg')
+#
+# rmagick process...
+#
+
+cmagick = CMagick::LoadImage.new(image: rmagick)
+```
+
 ## Example
 
 Left: original
