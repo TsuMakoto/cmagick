@@ -35,7 +35,7 @@ module CMagick
     end
 
     def resize(scale = 1.0)
-      if image_path == ''
+      if @img_path == ''
         return LoadImage.new(image: @image.resize(scale),
                              converter: @converter,
                              bg: @bg)
